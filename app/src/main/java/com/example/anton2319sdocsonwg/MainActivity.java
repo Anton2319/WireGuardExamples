@@ -22,7 +22,7 @@ import com.wireguard.config.Peer;
 
 public class MainActivity extends AppCompatActivity {
 
-    Backend backend;
+    Backend backend = PersistentConnectionProperties.getInstance().getBackend();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
